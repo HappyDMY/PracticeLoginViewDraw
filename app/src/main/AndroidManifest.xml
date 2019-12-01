@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tjoeun.practiceloginviewdraw">
-
+<!--allowBackup 삭제되어도 데이터 저장-->
     <application
         android:allowBackup="true"
         android:icon="@drawable/apich"
@@ -9,13 +9,17 @@
         android:roundIcon="@drawable/apich"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserInfoActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity android:name=".UserInfoActivity">
+
         </activity>
     </application>
 
